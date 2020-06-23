@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radio Input Examples</title>
+    <script type =text/javascript>
+        function radioFun(){
+            var rd1 = document.getElementById("radio1");
+            var rd2 =  document.getElementById("radio2");
+            if (rd1.checked == true){
+                alert("Check value :"+rd1.value);
+            } else if (rd2.checked == false){
+                alert("Check value :"+rd2.value);
+            } else {
+                alert("None of radio button is selected")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input id= "radio1" name ="profession" type = "radio" value ="Developer">Developer</input>
+    <br/>
+    <input id = "radio2" name ="profession" type = "radio" value ="Tester">Tester</input>
+    <br/>
+    <button onclick="radioFun()">Click Me</button>
+</body>
+</html>
